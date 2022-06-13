@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kinpo-morze", "kinpo-morze\kinpo-morze.vcxproj", "{49CE5655-6633-49FB-AEB2-03E5EC09723D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Debug|x64.ActiveCfg = Debug|x64
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Debug|x64.Build.0 = Debug|x64
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Debug|x86.ActiveCfg = Debug|Win32
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Debug|x86.Build.0 = Debug|Win32
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x64.ActiveCfg = Release|x64
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x64.Build.0 = Release|x64
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x86.ActiveCfg = Release|Win32
+		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75DC57BC-79D7-4BD9-B3D6-2A575FEFFB6A}
+	EndGlobalSection
+EndGlobal
