@@ -98,5 +98,28 @@ namespace testingmorze
 			string MustBeString = "10";
 			Assert::IsTrue(find(InputVector.begin(), InputVector.end(), MustBeString) != InputVector.end());
 		}
+
+		TEST_METHOD(NumbersAndLetterTest)
+		{
+			const string InputString = ".-....-";//А4
+			vector<string> InputVector;
+			string BiuldString;
+			decodeMorze(InputString, BiuldString, InputVector);
+
+			string MustBeString = "А4";
+			Assert::IsTrue(find(InputVector.begin(), InputVector.end(), MustBeString) != InputVector.end());
+		}
+
+		TEST_METHOD(NumbersAndWordTest)
+		{
+			const string InputString = "---..-.---.---------";//ЧАЙ10
+			vector<string> InputVector;
+			string BiuldString;
+			decodeMorze(InputString, BiuldString, InputVector);
+
+			string MustBeString = "ЧАЙ10";
+			Assert::IsTrue(find(InputVector.begin(), InputVector.end(), MustBeString) != InputVector.end());
+		}
+
 	};
 }
