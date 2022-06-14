@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <map>
+#include <fstream>
 #include "functions.h"
 using namespace std;
 
@@ -34,4 +35,29 @@ const string errors[5] = { "Не указан файл входных данны
 
 int main()
 {
+    ofstream out;       //поток выходных данных
+    ifstream in;        //поток входных данных
+    string path;        //Путь к файлу
+    string morzeString; //Строка для хранения сообщения на морзе
+
+    //открываем(cоздаем) файл выходных данных
+    out.open("results.txt");
+
+    //Ввод 
+    cin >> path;
+
+    //Открыть файл с входными данными
+    in.open(path);
+
+    if (!in.is_open()) return 0;
+
+    //Получить строку на языке Морзе из файла...
+    char ch;
+    while (in.get(ch))
+    {
+        morzeString.append(1, ch);
+    }
+
+    //Закрыть файл входных данных
+    in.close();
 }
