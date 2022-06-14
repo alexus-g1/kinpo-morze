@@ -46,18 +46,34 @@ int main()
     //Ввод 
     cin >> path;
 
-    //Открыть файл с входными данными
-    in.open(path);
-
-    if (!in.is_open()) return 0;
-
-    //Получить строку на языке Морзе из файла...
-    char ch;
-    while (in.get(ch))
+    try
     {
-        morzeString.append(1, ch);
+        //Вызвать исключение если путь не указан
+        if (path.length() == 0) throw 0;
+
+        //Открыть файл с входными данными
+        in.open(path);
+
+        //Вызвать исключение если файл не открылся
+        if (!in.is_open()) throw 1;
+
+        //Получить строку на языке Морзе из файла...
+        char ch;
+        while (in.get(ch))
+        {
+            morzeString.append(1, ch);
+        }
+
+        //Закрыть файл входных данных
+        in.close();
+
+        //Проверить строку морзе на корректность
+        checkInput(morzeString);
+    }
+    catch (int errorIndex)
+    {
+        //Обработать исключение и вывести соответствующую ошибку
+        out << errors[errorIndex];
     }
 
-    //Закрыть файл входных данных
-    in.close();
 }
