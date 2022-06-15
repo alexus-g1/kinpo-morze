@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kinpo-morze", "kinpo-morze\kinpo-morze.vcxproj", "{49CE5655-6633-49FB-AEB2-03E5EC09723D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testing-morze", "testing-morze\testing-morze.vcxproj", "{BB81EF0B-3E94-4750-8925-B328CA428790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x64.Build.0 = Release|x64
 		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x86.ActiveCfg = Release|Win32
 		{49CE5655-6633-49FB-AEB2-03E5EC09723D}.Release|x86.Build.0 = Release|Win32
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Debug|x64.ActiveCfg = Debug|x64
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Debug|x64.Build.0 = Debug|x64
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Debug|x86.Build.0 = Debug|Win32
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Release|x64.ActiveCfg = Release|x64
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Release|x64.Build.0 = Release|x64
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Release|x86.ActiveCfg = Release|Win32
+		{BB81EF0B-3E94-4750-8925-B328CA428790}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

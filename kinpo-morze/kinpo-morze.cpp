@@ -76,6 +76,19 @@ int main()
         out << errors[errorIndex];
     }
 
+    vector <string> results; //Вектор для хранения вариантов расшифровки
+
+    //Получить все возможные варианты расшифровки
+    decodeMorze(morzeString, "", results);
+
+    //Записать полученные варианты в файл выходных данных
+    vector <string> ::iterator it = results.begin();
+    for (it; it != results.end(); it++)
+    {
+        out << *it << "\n";
+    }
+
+    out.close();
 }
 
 void checkInput(const string morzeString)

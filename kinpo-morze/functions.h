@@ -1,7 +1,6 @@
 #pragma once
 using namespace std;
 #include <vector>
-#include <string>
 
 /*!	Поиск возможных вариантов перевода с азубки Морзе на русский
  *\param[in] srcString - исходная строка, зашифрованная в азбуке Морзе
