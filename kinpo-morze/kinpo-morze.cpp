@@ -93,3 +93,32 @@ void checkInput(const string morzeString)
         if (morzeString[i] != '.' && morzeString[i] != '-') throw 4;
     }
 }
+
+void decodeMorze(const string srcString, string currentDecodedString, vector <string>& variants)
+{
+    //Если строка не пустая
+    if (!srcString.empty())
+    {
+        //для каждого элемента в словаре морзе
+        for (auto& elem : dict)
+        {
+            //если элемент словаря совпадает с началом строки
+            if (srcString.find(elem.first) == 0)
+            {
+                //записать в конец строки для перевода соответствующую элементу словаря букву 
+                currentDecodedString.push_back(elem.second);
+
+                //Рекурсивно вызвать эту же функцию, используя новые значения промежуточных данных и копию исходной строки без первой буквы
+                decodeMorze(srcString.substr(elem.first.length()), currentDecodedString, variants);
+
+                //удалить из строки для перевода последнюю букву
+                currentDecodedString.pop_back();
+            }
+        }
+    }
+    else
+    {
+        //добавить строку с промежуточными данными в список возможных  переводов
+        variants.push_back(currentDecodedString);
+    }
+}
