@@ -77,3 +77,19 @@ int main()
     }
 
 }
+
+void checkInput(const string morzeString)
+{
+    //Вызвать исключение если строка пустая
+    if (morzeString.length() > 50) throw 2;
+
+    //Вызвать исключение если в строке больше 50 символов
+    if (morzeString.length() == 0) throw 3;
+
+    //для каждого символа в строке
+    for (int i = 0; i < morzeString.length(); i++)
+    {
+        //Вызвать исключение если символ не “точка” или не “тире”
+        if (morzeString[i] != '.' && morzeString[i] != '-') throw 4;
+    }
+}
